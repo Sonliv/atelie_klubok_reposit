@@ -1,0 +1,401 @@
+body{
+	background-color: rgb(240, 236, 236);
+}
+
+/* Верстка хедера */
+
+.nav-menu{
+	display: flex;
+	justify-content: space-between;
+}
+ a{
+	color: black;
+}
+
+.logo-text{
+	font-size: 32px;
+}
+
+
+.header {
+	font-size: 	32px;
+	background: rgba(0, 0, 0, 0.45	) url(/img/header-img.jpg) no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	padding: 0px 0 350px 0;
+	color: white;
+}
+.header a{
+	color: white;
+	font-size: 	28px;
+	font-family: Rubik;
+}
+.header a:hover{
+	/*color: rgb(223, 223, 133);*/
+	border-bottom: 1px solid white;
+}
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 50px 0;
+	border-bottom: 1px solid rgb(225, 225, 225);
+	padding: 30px;
+}
+.header-telephone {
+	font-weight: bold;
+}
+.logo img{
+	width: 140px;
+	height: 140px;
+}
+
+.user-account {
+	letter-spacing: 0.1em;
+}
+
+.nav-item {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+
+
+
+.header-button {
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	background-image: url("/img/strelo4ka.png");
+	background-size: cover;
+	background-position: center;
+	border: none;
+	outline: none;
+	position: relative;
+	left: 50%;
+	margin: 0 0 100px 0;
+	background-color: white;
+	border-radius: 50%;
+	animation: moveUpDown 2s ease-in-out infinite;
+	top: 300px;
+}
+
+
+
+@keyframes moveUpDown {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+
+/* Верстка Главной */
+
+
+.about {
+	background-color: rgb(240, 236, 236);
+}
+.container {
+}
+.main-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main-flex h2{
+	font-size: 48px;
+}
+.main-flex p{
+	margin: 0 0 30px 0;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+.title-about {
+	margin: 50px 0 50px 0;
+}
+.container-img-main{
+	overflow: scroll;
+	height: 500px;
+	scrollbar-width: none; /* убираем скролл-бар в Firefox */
+	-ms-overflow-style: none; /* убираем скролл-бар в IE и Edge */
+	margin: 0 0 60px 0;
+	text-align: center;
+	border-radius: 5%;
+}
+.main-img{
+	margin: 0 auto;
+ }
+
+.container-img-main::-webkit-scrollbar {
+	display: none; /* убираем скролл-бар в Chrome, Safari и Opera */
+ }
+
+ .restoration-title{
+	text-align: center;
+	padding: 60px 0 0 0;
+	font-size: 48px;
+ }
+
+
+/* стили текста  мейн*/
+.main-size-bold{
+	font-size: 30px;
+}
+
+.main-size-semi{
+	font-size: 28px;
+}
+
+.main-size-bold-rubic{
+	font-size: 24px;
+	font-family: Rubik;
+	letter-spacing: normal;
+}
+
+/* стили текста мейн */
+
+/* Анимка в мейне */
+
+  @keyframes fade-in-left {
+	0% {
+	  opacity: 0;
+	  transform: translateX(-50px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+ }
+ 
+ @keyframes fade-in-right {
+	0% {
+	  opacity: 0;
+	  transform: translateX(50px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+ }
+ 
+ .main-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+ }
+ 
+ .title-about {
+	opacity: 0;
+	animation: fade-in-left 2s ease forwards;
+ }
+ 
+ p {
+	opacity: 0;
+	animation: fade-in-right 2s ease forwards;
+ }
+ 
+ /*  Секция Пошив restoration */
+
+.restoration-title{
+	margin: 0 0 60px 0;
+}
+
+.restoration-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+ 
+.restoration-flex p{
+	margin: 0 0 60px 0;
+}
+
+
+.restoration-card{
+	width: 40%;
+	background-color: white;
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 20px 20px 30px 20px;
+	border-radius: 20px;
+	transition: 0.2s;
+	margin: 50px;
+}
+
+.restoration-card:hover{
+	transform: scale(1.05);
+	box-shadow: 0px 10px 19px -2px rgba(29, 72, 138, 0.2);
+}
+
+.restoration{
+	background-color: rgba(235, 234, 234, 0.99);
+	margin: -65px 0 0px 0;
+}
+.restoration-card h3{
+	position: relative;
+	top: 10px;
+	right: 0 auto;
+	font-size: 22px;
+	font-family: Rubik;
+	letter-spacing: 1px;
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+.card-img{
+	width: 100%;
+	border-radius: 20px;
+}
+
+
+h4{
+	position: relative;
+	top: 20px;
+	right: 0 auto;
+	font-size: 22px;
+	font-family: Rubik;
+	letter-spacing: 2px;
+}
+
+.rubic-ff{
+	font-family: Rubik;
+	font-size: 22px;
+}
+
+
+
+/* Цены  прайс-лист 
+
+.price {
+	
+	padding: 0 0 100px 0;
+}
+.container {
+}
+.price-block {
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0 0 60px 0;
+	padding: 60px 0 60px 0;
+}
+
+.price-container {
+	display: flex;
+	align-items: center;
+}
+.price-left {
+	width: 35%;
+}
+.prices {
+	margin: 0 0 20px 0;
+	font-size: 22px;
+	font-weight: bold;
+}
+.all-prices {
+	border-radius: 10px;
+	border: 1px solid gray;
+	padding: 10px;
+	background-color: rgba(235, 234, 234, 0.99);
+	font-size: 20px;
+}
+.all-prices:hover {
+	transform: scale(1.2);
+}
+.price-list {
+	width: 65%;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid black;
+	box-shadow: 0px 10px 19px -2px rgba(29, 72, 138, 0.2);
+	background-color: rgba(235, 234, 234, 0.99);
+}
+.price-position {
+	display: flex;
+	border-bottom: 1px solid black;
+	margin: 20px 10px 20px 10px;
+	justify-content: space-between;
+}
+.price-position:hover{
+	transform: scale(1.05);
+}
+.price-item {
+	font-size: 20px;
+}
+.price-position a{
+	
+}
+.cost-item {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+/* Цены / прайс-лист */
+
+
+
+
+.footer{
+	background-color: white;
+	padding: 0 0 100px 0;
+}
+
+.footer-img{
+	border-radius: 5%;
+	border: 1px solid black;
+	width: 50%;
+}
+
+.container {
+}
+.footer-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 48px;
+	padding: 60px 0 60px 0;
+}
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-list {
+	background-color: rgba(243, 241, 241, 0.99);
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+	box-shadow: 0px 10px 19px -2px rgba(29, 72, 138, 0.2);
+	width: 40%;
+}
+.footer-position {
+	display: flex;
+	border-bottom: 1px solid black;
+	margin: 20px 10px 20px 10px;
+	justify-content: space-between;
+}
+
+.footer-item {
+/*	margin: 0 435px 0 0;*/
+	font-size: 26px;
+}
+
+
+
